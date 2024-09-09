@@ -24,6 +24,9 @@ Our results show that:
 - **`data_variance_disk_with_stream.py`**: 
   This script generates training and validation data for the Miyamoto-Nagai disk potential and perturbs the dataset with a toy model of a stellar stream. This is used to quantify the data variance when training normalizing flows on this perturbed dataset.
 
+- **`init_variance_plummer_with_stream.py`** and **`data_variance_plummer_with_stream.py`**:
+  These scripts are identical to their disk counterparts but they use Plummer sphere data as the base distributions. The Plummer sphere data needed for training is generated within these scripts. 
+
 - **`kl_divergence_and_visualisations.ipynb`**:
   This notebook visualises the Plummer sphere and disk data distributions and calculates the KL-divergence between the base distributions and the perturbed distributions (i.e. adding a stream).
 
